@@ -62,6 +62,5 @@ Based on this score, incidents are classified and resources are allocated effici
 
 # Author
 
-HIMANSHU SINGH
 
 Himanshu Singh
