@@ -1,16 +1,67 @@
-# React + Vite
+# Adaptive Disaster Response System (ADRRAS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
 
-Currently, two official plugins are available:
+The Adaptive Disaster Response System is a simulation-driven platform designed to manage emergency situations intelligently. It analyzes incidents based on severity and impact, assigns priority scores, and dynamically allocates resources such as ambulances, rescue teams, and supply units.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Intelligent incident prioritization system
+* Dynamic resource allocation engine
+* Real-time status tracking (Awaiting → Assigned → Active → Resolved)
+* Interactive dashboard interface
+* Incident map visualization (simulation-based)
+* Decision log system for tracking actions
+* Analytics and performance insights
+* Emergency mode for critical scenarios
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# System Logic
+
+The system evaluates incidents using:
+
+* Severity level
+* Number of people affected
+
+Priority Score Calculation:
+Priority Score = (Severity × 20) + (People Affected)
+
+Based on this score, incidents are classified and resources are allocated efficiently.
+
+# Modules
+
+* Dashboard (System Overview)
+* Incident Reporting System
+* Resource Management System
+* Allocation Engine
+* Decision Log Panel
+* Analytics Dashboard
+
+
+# Tech Stack
+
+* React.js
+* Vite
+* JavaScript
+* CSS
+
+# Highlights
+
+* Simulates real-world disaster management systems
+* Implements intelligent decision-making logic
+* Fully responsive and interactive UI
+
+
+# Future Scope
+
+* Real-time map integration (Google Maps / Leaflet)
+* AI-based predictive analysis
+* IoT-based emergency data integration
+
+
+# Author
+
+HIMANSHU SINGH
+
+Himanshu Singh
