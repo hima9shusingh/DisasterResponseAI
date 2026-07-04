@@ -1,4 +1,4 @@
-# Adaptive Disaster Response System (ADRRAS)
+# DisasterResponseAI
 
 # Overview
 
