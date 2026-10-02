@@ -73,6 +73,13 @@ export const DisasterProvider = ({ children }) => {
 
   const [analytics, setAnalytics] = useState({ totalHandled: 3, totalResolved: 1, sumResponseTime: 12 });
 
+  const addLog = useCallback((message) => {
+    setDecisionLogs(prev => {
+      const updated = [{ id: Date.now() + Math.random(), time: new Date().toLocaleTimeString(), message }, ...prev];
+      return updated.slice(0, 50);
+    });
+  }, []);
+
   useEffect(() => {
     // Recalculate priorities whenever emergency mode changes
     setIncidents(prev => prev.map(inc => {
@@ -87,12 +94,7 @@ export const DisasterProvider = ({ children }) => {
     }
   }, [emergencyMode]);
 
-  const addLog = useCallback((message) => {
-    setDecisionLogs(prev => {
-      const updated = [{ id: Date.now() + Math.random(), time: new Date().toLocaleTimeString(), message }, ...prev];
-      return updated.slice(0, 50);
-    });
-  }, []);
+
 
   const addIncidentTimelineStage = (inc, stage) => {
     return [...(inc.timeline || []), { stage, time: new Date().toISOString() }];

@@ -170,3 +170,29 @@ button {
     padding: 1rem;
   }
 }
+
+/* Global Dark Mode Overrides (Demo) */
+html.dark {
+  /* In a full implementation, these would map to tailwind's dark: variants */
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html.dark img, 
+html.dark video, 
+html.dark [data-theme-ignore="true"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Global Compact Mode Overrides */
+html.compact .p-6 { padding: 1rem; }
+html.compact .p-8 { padding: 1.25rem; }
+html.compact .py-6 { padding-top: 1rem; padding-bottom: 1rem; }
+html.compact .mb-6 { margin-bottom: 1rem; }
+html.compact .space-y-6 > * + * { margin-top: 1rem; }
+html.compact .gap-6 { gap: 1rem; }
+html.compact .h-16 { height: 3rem; }
+
+/* Global Map Z-Index Fix */
+.leaflet-container {
+  z-index: 10 !important;
+}

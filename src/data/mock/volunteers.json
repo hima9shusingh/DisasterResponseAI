@@ -1,0 +1,20 @@
+[
+  {
+    "id": "VOL-001",
+    "userId": "USR-003",
+    "name": "Alex Johnson",
+    "skills": ["First Aid", "Driving"],
+    "availability": "Available",
+    "location": "Downtown LA",
+    "hoursLogged": 45
+  },
+  {
+    "id": "VOL-002",
+    "userId": "USR-004",
+    "name": "Sam Carter",
+    "skills": ["Search and Rescue", "Medical"],
+    "availability": "Busy",
+    "location": "San Francisco",
+    "hoursLogged": 120
+  }
+]

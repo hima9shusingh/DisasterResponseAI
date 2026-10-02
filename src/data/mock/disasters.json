@@ -1,0 +1,30 @@
+[
+  {
+    "id": "DIS-001",
+    "type": "Flood",
+    "severity": "High",
+    "location": {
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "address": "Downtown LA"
+    },
+    "description": "Severe flooding due to heavy rainfall.",
+    "status": "Active",
+    "reportedAt": "2026-08-01T10:00:00Z",
+    "affectedPeople": 1500
+  },
+  {
+    "id": "DIS-002",
+    "type": "Earthquake",
+    "severity": "Critical",
+    "location": {
+      "lat": 37.7749,
+      "lng": -122.4194,
+      "address": "San Francisco Bay Area"
+    },
+    "description": "Magnitude 6.5 earthquake reported.",
+    "status": "Active",
+    "reportedAt": "2026-08-02T14:30:00Z",
+    "affectedPeople": 5000
+  }
+]

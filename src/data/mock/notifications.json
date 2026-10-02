@@ -1,0 +1,18 @@
+[
+  {
+    "id": "NOTIF-001",
+    "title": "Severe Weather Alert",
+    "message": "Heavy rainfall expected in downtown area. Please stay indoors.",
+    "type": "warning",
+    "timestamp": "2026-08-03T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "NOTIF-002",
+    "title": "Resource Allocation Update",
+    "message": "500 Medical Kits have been dispatched to Relief Camp A.",
+    "type": "info",
+    "timestamp": "2026-08-03T10:00:00Z",
+    "read": true
+  }
+]

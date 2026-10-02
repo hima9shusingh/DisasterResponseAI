@@ -1,0 +1,15 @@
+[
+  {
+    "id": "CAMP-001",
+    "name": "Downtown High School Shelter",
+    "capacity": 500,
+    "currentOccupancy": 320,
+    "location": {
+      "lat": 34.0452,
+      "lng": -118.2530,
+      "address": "123 Main St, LA"
+    },
+    "manager": "USR-002",
+    "facilities": ["Food", "Water", "Medical", "Power"]
+  }
+]

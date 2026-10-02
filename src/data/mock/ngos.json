@@ -1,0 +1,11 @@
+[
+  {
+    "id": "NGO-001",
+    "name": "Global Relief Foundation",
+    "focusAreas": ["Food Distribution", "Medical Aid"],
+    "contactPerson": "John Smith",
+    "contactEmail": "john.smith@ngo.org",
+    "activePersonnel": 50,
+    "resourcesAvailable": ["Ambulance", "Food Packets", "Water Tanks"]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "USR-001",
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "role": "Citizen",
+    "phone": "+1234567890",
+    "location": {
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "address": "Los Angeles, CA"
+    },
+    "status": "Safe"
+  },
+  {
+    "id": "USR-002",
+    "name": "John Smith",
+    "email": "john.smith@ngo.org",
+    "role": "NGO_Admin",
+    "phone": "+1987654321",
+    "organization": "Global Relief Foundation"
+  },
+  {
+    "id": "USR-003",
+    "name": "Alex Johnson",
+    "email": "alex.vol@example.com",
+    "role": "Volunteer",
+    "phone": "+1122334455",
+    "skills": ["First Aid", "Driving"]
+  }
+]

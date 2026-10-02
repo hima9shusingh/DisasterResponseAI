@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-light: #3B82F6;
+  --color-primary: #1E40AF;
+  --color-primary-dark: #1E3A8A;
+  
+  --color-emergency-light: #F87171;
+  --color-emergency: #EF4444;
+  --color-emergency-dark: #B91C1C;
+  
+  --color-warning-light: #FBBF24;
+  --color-warning: #F59E0B;
+  --color-warning-dark: #D97706;
+
+  --color-success-light: #34D399;
+  --color-success: #10B981;
+  --color-success-dark: #047857;
+
+  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-100 text-neutral-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass rounded-xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark focus:ring-primary;
+  }
+  
+  .btn-danger {
+    @apply bg-emergency text-white hover:bg-emergency-dark focus:ring-emergency;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-neutral-600 hover:bg-neutral-200 hover:text-neutral-900;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary outline-none transition-colors duration-200 bg-white/50 backdrop-blur-sm;
+  }
+  
+  .card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-glass rounded-xl p-6;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}

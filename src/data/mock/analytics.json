@@ -1,0 +1,15 @@
+{
+  "totalDisasters": 12,
+  "activeDisasters": 3,
+  "peopleAffected": 15000,
+  "resourcesDeployed": 4500,
+  "volunteersActive": 120,
+  "fundsRaised": 500000,
+  "monthlyTrend": [
+    { "month": "Jan", "incidents": 2 },
+    { "month": "Feb", "incidents": 1 },
+    { "month": "Mar", "incidents": 4 },
+    { "month": "Apr", "incidents": 2 },
+    { "month": "May", "incidents": 3 }
+  ]
+}

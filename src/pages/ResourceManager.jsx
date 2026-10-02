@@ -10,7 +10,6 @@ import {
 } from 'lucide-react';
 
 const ResourceCard = ({ resource, onClick, isSelected }) => {
-  const isMaintenance = resource.status === 'Maintenance';
 
   const getIcon = (type) => {
     switch(type) {

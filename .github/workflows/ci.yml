@@ -1,0 +1,63 @@
+name: ADR-RAS CI
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  backend-check:
+    name: Backend — Syntax & Import Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: 'backend/package-lock.json'
+
+    - name: Install backend dependencies
+      run: npm ci
+      working-directory: ./backend
+
+    - name: Backend — syntax & import verification
+      working-directory: ./backend
+      env:
+        NODE_ENV: test
+        JWT_SECRET: ci-test-secret-placeholder
+        MONGODB_URI: mongodb://localhost:27017/adrras_ci
+        CLIENT_URL: http://localhost:5173
+        JWT_EXPIRES_IN: 1d
+      run: node ci-check.js
+
+  frontend-build:
+    name: Frontend — Build Check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: 'package-lock.json'
+
+    - name: Install frontend dependencies
+      run: npm ci
+
+    - name: Build frontend
+      env:
+        # Placeholder URL for CI build — prevents baking localhost into dist
+        VITE_API_URL: https://your-production-backend.com/api/v1
+      run: npm run build

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "RES-001",
+    "name": "Medical Kits",
+    "category": "Medical",
+    "quantity": 500,
+    "location": "Central Warehouse",
+    "status": "Available"
+  },
+  {
+    "id": "RES-002",
+    "name": "Drinking Water (1L Bottles)",
+    "category": "Food & Water",
+    "quantity": 10000,
+    "location": "Relief Camp A",
+    "status": "In Use"
+  }
+]
